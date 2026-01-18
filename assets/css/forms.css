@@ -1,0 +1,218 @@
+.sticker__head__trial .delivery-archive__data{
+    margin-left: 20px;
+}
+.detailed__head{
+    display: flex;
+    align-items: center;
+}
+.detailed-lockdown{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.detailed-lockdown p{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    margin-left: 10px;
+}
+.detailed__info{
+    margin-top: 50px;
+}
+.detailed__info>p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+.detailed__form{
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: #FAFAFA;
+    border-radius: 5px;
+    max-width: 967px;
+}
+.detailed__form__flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.detailed__form__flex .beyoo__inp {
+    max-width: 360px;
+}
+.detailed__prodt{
+    background: #FAFAFA;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 30px;
+}
+.detailed__prodt__flex{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.personal__form{
+    max-width: 100%;
+    padding: 10px 20px;
+    background: #FAFAFA;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.personal__form .beyoo__inp {
+    max-width: 387px;
+}
+.change-password{
+    margin-top: 30px;
+}
+.change-password strong{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0E1325;
+}
+.change-password .personal__form{
+    margin-top: 10px;
+}
+.enter-password{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.enter-password .beyoo__inp{
+    max-width: 360px;
+}
+.enter-password .beyoo__inp label input{
+    background: #FAFAFA;
+}
+.token-access{
+    margin-top: 30px;
+}
+.token-access strong{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0E1325;
+}
+.token-access__flex{
+    margin-top: 10px;
+    padding: 10px 20px;
+    max-width: 426px;
+    width: 100%;
+    background: #FAFAFA;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.token-access__flex .beyoo__inp label input{
+    padding: 10px 15px 10px 20px;
+}
+.personal__tow__pass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.personal__tow__pass img{
+    margin-right: 10px;
+}
+.personal__tow__pass span{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 18px;
+    color: #0E1325;
+}
+
+@media (max-width: 1199px){
+    .detailed__form__flex .beyoo__inp {
+        max-width: 340px;
+    }
+    .personal__form .beyoo__inp {
+        margin-bottom: 0;
+    }
+    .token-access__flex .beyoo__inp {
+        margin-bottom: 0;
+    }
+    .enter-password .beyoo__inp {
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 991px){
+    .detailed__form__flex .beyoo__inp {
+        max-width: 245px;
+        margin-bottom: 0;
+    }
+    .detailed-lockdown {
+        display: none;
+    }
+    .personal__form .detailed__form__flex{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .personal__form .beyoo__inp {
+        margin-bottom: 10px;
+    }
+    .enter-password {
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+    .personal__tow__pass {
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 760px){
+    .detailed__form__flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .detailed__form__flex .beyoo__inp {
+        max-width: 360px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .token-access strong {
+        font-size: 16px;
+    }
+}
+@media (max-width: 570px){
+    .sticker__head__trial .delivery-archive__data{
+        display: none;
+    }
+    .detailed__info>p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .detailed__info {
+        margin-top: 30px;
+    }
+    .detailed__prodt {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .enter-password {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .enter-password .beyoo__inp {
+        margin-bottom: 10px;
+    }
+    .token-access__flex .beyoo__inp {
+        margin-bottom: 10px;
+    }
+    .token-access__flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .personal__form {
+        padding: 10px 10px;
+        margin-top: 20px;
+    }
+    .token-access__flex {
+        padding: 10px 10px;
+    }
+    .personal__tow__pass {
+        justify-content: flex-start;
+    }
+}

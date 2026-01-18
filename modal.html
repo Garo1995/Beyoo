@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .modal-reg {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 20px;
+    }
+
+    .modal-reg>button {
+        color: #FFFFFF;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background: linear-gradient(21.85deg, #EE2CA0 0%, #D32CEE 100%);
+        border-radius: 5px;
+    }
+</style>
+<body>
+
+<div class="modal-reg">
+
+    <button data-val="tariff" class="open_modal">Выбрать тариф</button>
+    <div id="tariff" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <strong class="text-mob__tar">Вы уже воспользовались бесплатным периодом, чтобы продолжить пользоваться сервисом, нужно оплатить тариф» и кнопка «выбрать тариф</strong>
+                <div class="already__liner modal-btn__center">
+                    <button data-val="choose-plan" class="open_modal close__mods btn">Выбрать тариф</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="choose-plan" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <h3>Выберите тариф</h3>
+                <div class="choose-plan">
+                    <a href="javascript:;" class="choose-plan__href plan__active">
+                        <div class="choose-plan__data">
+                            <img src="assets/img/calendar.png" alt="">
+                            <span>1 месяц</span>
+                        </div>
+                        <strong>500 руб.</strong>
+                    </a>
+                    <a href="javascript:;" class="choose-plan__href">
+                        <div class="choose-plan__data">
+                            <img src="assets/img/calendar2.png" alt="">
+                            <span>1 год</span>
+                        </div>
+                        <div class="choose-plan__price">
+                            <span>Обычная цена</span>
+                            <strong>6 000 руб.</strong>
+                        </div>
+                        <div class="choose-plan__profitable">
+                            <span>Цена с выгодой </span>
+                            <strong>5 000 руб.</strong>
+                        </div>
+                    </a>
+                </div>
+                <div class=" modal-btn__center">
+                    <button data-val="payment" class="open_modal close__mods btn">Оплатить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="payment" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <div class="payment-successful">
+                    <img src="assets/img/success3.svg" alt="">
+                </div>
+                <h3>Оплата прошла успешно</h3>
+                <p>Спасибо, что выбрали наш сервис</p>
+                <div class="payment-successful_btn">
+                    <a href="#" class="close__mods btn">Вернуться на сайт</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <button data-val="pers-dat" class="open_modal">Личный кабинет</button>
+    <div id="pers-dat" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <strong class="text-mob__tar">Вам уже доступен бесплатный период, Вы можете воспользоваться услугами нашего сервиса в личном кабинете</strong>
+                <div class="already__liner modal-btn__center">
+                    <button data-val="choose-plan" class="open_modal close__mods btn">Личный кабинет</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button data-val="prin" class="open_modal">Ваша заявка принята</button>
+    <div id="prin" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <strong class="text-mob__tar">Ваша заявка принята и находится в обработке. Наш менеджер свяжется с Вами в ближайшее время</strong>
+                <div class="already__liner modal-btn__center">
+                    <button class="close__mods btn">Вернуться на сайт</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <button data-val="entrance" class="open_modal">Вход</button>
+    <div id="entrance" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <h3>Вход</h3>
+                <form>
+                    <div class="quick-message__form">
+                        <div class="beyoo__inp">
+                            <p>E-mail</p>
+                            <label><input type="text" placeholder="ivan@gmail.com"></label>
+                        </div>
+                        <div class="beyoo__inp">
+                            <p>Пароль</p>
+                            <label>
+                                <input type="text" placeholder="Введите пароль">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-btn__center">
+                        <button class="btn">Войти</button>
+                        <div class="already__liner already__flex">
+                            <a href="#" class="forgot-password">Забыли пароль?</a>
+                            <a href="#" class="vxod-site">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button data-val="wrong-login" class="open_modal">Вход</button>
+    <div id="wrong-login" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <h3>Вход</h3>
+                <form>
+                    <div class="quick-message__form">
+                        <div class="beyoo__inp">
+                            <p>E-mail</p>
+                            <label><input type="text" placeholder="ivan@gmail.com"></label>
+                        </div>
+                        <div class="beyoo__inp">
+                            <p>Пароль</p>
+                            <label>
+                                <input type="text" placeholder="Введите пароль">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-btn__center">
+                        <button class="btn">Войти</button>
+                        <div class="personal__tow__pass">
+                            <img src="assets/img/alert-Info.svg" alt="">
+                            <span>Неверный логин или пароль</span>
+                        </div>
+                        <div class="already__liner already__flex">
+                            <a href="#" class="forgot-password">Забыли пароль?</a>
+                            <a href="#" class="vxod-site">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button data-val="restore" class="open_modal">Восстановить пароль</button>
+    <div id="restore" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <h3>Восстановить пароль</h3>
+                <p>
+                    Введите Ваш email, и мы вышлем по указанному адресу инструкцию для восстановления пароль
+                </p>
+                <form>
+                    <div class="quick-message__form">
+                        <div class="beyoo__inp">
+                            <p>E-mail</p>
+                            <label><input type="text" placeholder="ivan@gmail.com"></label>
+                        </div>
+                    </div>
+                    <div class="modal-btn__center">
+                        <button class="btn">Восстановить</button>
+                        <div class="already__liner already__flex">
+                            <a href="#" class="vxod-site">Войти</a>
+                            <a href="#" class="vxod-site">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button data-val="email-registered" class="open_modal">Восстановить пароль</button>
+    <div id="email-registered" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <h3>Восстановить пароль</h3>
+                <p>
+                    Введите Ваш email, и мы вышлем по указанному адресу инструкцию для восстановления пароль
+                </p>
+                <form>
+                    <div class="quick-message__form">
+                        <div class="beyoo__inp">
+                            <p>E-mail</p>
+                            <label><input type="text" placeholder="ivan@gmail.com"></label>
+                        </div>
+                    </div>
+                    <div class="modal-btn__center">
+                        <button class="btn">Восстановить</button>
+                        <div class="personal__tow__pass">
+                            <img src="assets/img/alert-Info.svg" alt="">
+                            <span>Данный email не зарегистрирован на сайте</span>
+                        </div>
+                        <div class="already__liner already__flex">
+                            <a href="#" class="vxod-site">Войти</a>
+                            <a href="#" class="vxod-site">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button data-val="back-site" class="open_modal">Вернуться на сайт</button>
+    <div id="back-site" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <h3>Восстановить пароль</h3>
+                <p>
+                    На Вашу почту была выслана инструкция для восстановления пароля
+                </p>
+                <div class="already__liner modal-btn__center">
+                    <p>
+                        Если письмо не пришло, проверьте папку «спам»
+                    </p>
+                    <button class="btn">Вернуться на сайт</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <button data-val="completed" class="open_modal">Поставка успешно закрыта</button>
+    <div id="completed" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <div class="payment-successful">
+                    <img src="assets/img/success3.svg" alt="">
+                </div>
+                <h3>Наклейки успешно сгенерированы, теперь Вы можете их скачать</h3>
+                <p>Поставка успешно закрыта</p>
+                <div class="payment-successful_btn">
+                    <a href="#" class="btn">Вернуться на сайт</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button data-val="shortly" class="open_modal">Вернуться на сайт</button>
+    <div id="shortly" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <h3>Спасибо за заявку, мы свяжемся с Вами в ближайшее время</h3>
+                <div class="payment-successful_btn">
+                    <a href="#" class="btn">Вернуться на сайт</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button data-val="create" class="open_modal">Регистрация</button>
+    <div id="create" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <h3>Создать новую
+                    поставку</h3>
+                <form>
+                    <div class="quick-message__form">
+                        <div class="beyoo__inp">
+                            <p>Ваше ФИО или название компании</p>
+                            <label>
+                                <input type="text" placeholder="ФИО">
+                            </label>
+                        </div>
+                        <div class="beyoo__inp">
+                            <p>E-mail</p>
+                            <label><input type="text" placeholder="ivan@gmail.com"></label>
+                        </div>
+                        <div class="beyoo__inp">
+                            <p>Номер телефона</p>
+                            <label>
+                                <input type="text" placeholder="+7" pattern="\+7 \(\d{3}\)-\d{3}-\d{2}-\d{2}"
+                                       class="phone">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-btn__center">
+                        <button class="btn">Создать</button>
+                        <div class="already__liner">
+                            <p>
+                                Из ТЗ. Полей нету “Опишите какие поля должен заполнить пользователь”. Поставил для примера
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button data-val="feedback" class="open_modal">Обратная связь</button>
+    <div id="feedback" class="modal">
+        <div class="modal-content">
+            <div class="modal-registration">
+                <div class="close"></div>
+                <h3>Обратная связь</h3>
+                <form>
+                    <div class="quick-message__form">
+                        <div class="beyoo__inp">
+                            <p>Ваше ФИО или название компании</p>
+                            <label>
+                                <input type="text" placeholder="Иван">
+                            </label>
+                        </div>
+                        <div class="beyoo__inp">
+                            <p>E-mail</p>
+                            <label><input type="text" placeholder="ivan@gmail.com"></label>
+                        </div>
+                        <div class="beyoo__inp">
+                            <p>Номер телефона</p>
+                            <label>
+                                <textarea placeholder="Введите текст"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-btn__center">
+                        <button class="btn">Перезвоните мне</button>
+                        <div class="block-checked">
+                            <label class="checkcontainer">Даю свое согласие на обработку данных
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/jquery.mask.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
